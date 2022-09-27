@@ -5,4 +5,54 @@
         <script src = 'script.js' defer></script>
         <link rel = 'stylesheet' href = 'style.css'>
     </head>
+
+    <body>
+        <div class="main-container">
+            <div class='description'>
+                <h3>Enter any of the two to calculate pace, distance, or time.</h3>
+            </div>
+            
+            <div class="unit">
+                <p class="prompt">Km or Mile: </p>
+                <button class = 'unit'>Km</button>
+                <button class = 'unit'>Mile</button>
+            </div>
+
+            <div class = 'topside'>
+            <p class = 'prompt'>Enter the distance: </p>
+            
+            <select name="distances" id="distances">
+                <option value = 'blank'>-</option>
+                <option value="fiveK">5K</option>
+                <option value="tenK">10K</option>
+                <option value="half">Half-Marathon</option>
+                <option value="marathon">Marathon</option>
+            </select>
+            <p class = 'prompt'> or</p>
+            <input class = 'custom' placeholder = 'custom'>
+        </div>
+
+        <div class="middle">
+            <p class = 'prompt'>Time:</p>
+            <input type="text" class = 'time-box' placeholder = 'Hours'>
+            <p class = 'prompt'>:</p>
+            <input type="text" class = 'time-box' placeholder = 'Minutes'>
+            <p class = prompt>:</p>
+            <input type="text" class = 'time-box' placeholder = 'Seconds'>
+        </div>
+
+        <div class="bottom-side">
+            <p class = 'prompt'>Pace:</p>
+            <input type="text" class = 'time-box' placeholder = 'Minutes'>
+            <p class = 'prompt'>:</p>
+            <input type="text" class = 'time-box' placeholder = 'Seconds'>
+
+        </div>
+        <div class="button-box">
+        <button class = 'bottom-buttons'>Calculate</button>
+        <button class = 'bottom-buttons'>Reset</button>
+    </div>
+    </body>
+
+
 </html>

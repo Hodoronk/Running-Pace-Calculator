@@ -15,19 +15,19 @@
             
             <div class="unit">
                 <p class="prompt">Km or Mile: </p>
-                <button class = 'unit-button'>Km</button>
-                <button class = 'unit-button'>Mile</button>
+                <button class = 'unit-button' id = 'kilometer'>Km</button>
+                <button class = 'unit-button' id = 'mile'>Mile</button>
             </div>
 
             <div class = 'topside'>
             <p class = 'prompt'>Enter the distance: </p>
             
-            <select name="distances" id="distances">
+            <select name="distances" id="distances" onchange = 'changeRace()'>
                 <option value = 'blank'>-</option>
-                <option value="fiveK">5K</option>
-                <option value="tenK">10K</option>
-                <option value="half">Half-Marathon</option>
-                <option value="marathon">Marathon</option>
+                <option value="5">5K</option>
+                <option value="10">10K</option>
+                <option value="21">Half-Marathon</option>
+                <option value="42">Marathon</option>
             </select>
             <p class = 'prompt'> or</p>
             <input class = 'custom' placeholder = 'custom'>

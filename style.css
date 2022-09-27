@@ -16,16 +16,21 @@ body{
     flex-direction: column; 
     justify-content:center;
     align-items: center;
+    background-image: linear-gradient(to right, rgb(16, 150, 173), rgb(4, 61, 61));
 
 }
 
 
 .main-container{
-    border: 5px solid grey;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(90, 90, 90, 0.5));
+    border-image: linear-gradient(rgb(238, 255, 0, 0.5), rgb(101, 114, 40, 0.5)) 27;
+    border-style: solid;
+    border-width: 5px;
     height: 500px;
     width: 700px;
-    border-radius:2%;
-    box-shadow: 1px 2px;
+    border-radius: 3%;
+    -webkit-box-shadow: 50px 50px 50px 22px rgba(0,0,0,0.72); 
+    box-shadow: 50px 50px 50px 22px rgba(0,0,0,0.72);
     display:flex;
     padding:10px;
     flex-direction:column;
@@ -90,26 +95,63 @@ body{
 .unit-button:hover{background-color: rgba(133, 123, 123, 0.3);}
 .unit-button:active{
     background-color: rgba(133, 123, 123, 0.3);
-    box-shadow: 0 5px;
+    box-shadow: 0 1px;
     transform: translateY(4px);
 }
 .button-box{
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
 
 }
-.bottom-button{
+.reset-button{
 height: 35px;
-width: 75px;
-margin-right: 50px;
+width: 150px;
 border-style:solid;
-border-color: black;
-border-radius: 10px;
+border-color: rgb(0, 0, 0);
+border-radius: 5px;
 font-weight:bold;
+background-image: linear-gradient(to right, rgb(163, 30, 30), rgb(0,0,0));
+color: white;
+}
+@font-face{
+    font-family: myfont;
+    src: url(Fonts/04B_30__.TTF);
 }
 
 h1{
-    font-weight:bold;
+    font-weight:normal;
+    color: gold;
     margin-bottom:65px;
+    font-family: myfont;
+    text-shadow: 13px 18px 11px #000000;
+    letter-spacing: 2px;
 }
 
+
+.reset-button:hover{background-color:rgba(48, 47, 47, 0.5)}
+.reset-button:active{
+    box-shadow: 0 1px;
+    transform: translateY(4px);
+}
+
+.calculate-button{
+    width: 150px;
+    background-image: linear-gradient(to right, rgb(22, 187, 0), rgb(12, 100, 0));
+    border-radius: 5px;
+    font-weight:bold;
+    color: white;
+}
+.calculate-button:hover{
+    background-color: rgba(22, 187, 0, 0.5);
+}
+
+
+
+
+.time-box,
+.custom,
+#distances{
+    background-color: rgba(3, 3, 3, 0.5);
+    font-weight:bold;
+    color:white;
+}

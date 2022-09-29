@@ -14,7 +14,6 @@ const secPace = document.querySelector('#secPace');
 let unitChoice = ''
 let distance = '';
 let hrs = '';
-let test;
 let mins = '';
 let secs = '';
 let convertedTime;

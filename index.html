@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Running Pace Calculator</title>
+        <script src = 'script.js' defer></script>
+        <link rel = 'stylesheet' href = 'style.css'>
+    </head>
+
+    <body>
+        <h1>running pace calculator</h1>
+        <div class="main-container">
+            <div class='description'>
+                <h3>Enter any of the two to calculate pace, distance, or time.</h3>
+            </div>
+            
+            <div class="unit">
+                <p class="prompt">Km or Mile: </p>
+                <button class = 'unit-button' id = 'kilometer'>Km</button>
+                <button class = 'unit-button' id = 'mile'>Mile</button>
+            </div>
+
+            <div class = 'topside'>
+            <p class = 'prompt'>Enter the distance: </p>
+            
+            <select name="distances" id="distances">
+                <option value = 0>-</option>
+                <option value= 1>5K</option>
+                <option value= 2>10K</option>
+                <option value= 3>Half-Marathon</option>
+                <option value= 4>Marathon</option>
+            </select>
+            <p class = 'prompt'> or</p>
+            <input class = 'custom' placeholder = 'custom'>
+        </div>
+
+        <div class="middle">
+            <p class = 'prompt'>Time:</p>
+            <input type="text" class = 'time-box-hrs' placeholder = 'Hours'>
+            <p class = 'prompt'>:</p>
+            <input type="text" class = 'time-box-min' placeholder = 'Minutes'>
+            <p class = prompt>:</p>
+            <input type="text" class = 'time-box-sec' placeholder = 'Seconds'>
+        </div>
+
+        <div class="bottom-side">
+            <p class = 'prompt'>Pace:</p>
+            <input type="text" class = 'time-box' id = 'minPace' placeholder = 'Minutes'>
+            <p class = 'prompt'>:</p>
+            <input type="text" class = 'time-box' id = 'secPace' placeholder = 'Seconds'>
+
+        </div>
+        <div class="button-box">
+        <button class = 'calculate-button'>Calculate</button>
+        <button class = 'reset-button'>Reset</button>
+    </div>
+    </body>
+
+
+</html>

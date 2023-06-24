@@ -1,0 +1,163 @@
+*{
+    box-sizing:border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+
+}
+body{
+
+    height: 100vh;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display:flex;
+    flex-direction: column; 
+    justify-content:center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(16, 150, 173), rgb(4, 61, 61));
+
+}
+
+
+.main-container{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(80, 79, 79, 0.5));
+    border-image: linear-gradient(rgb(238, 255, 0, 0.5), rgb(101, 114, 40, 0.5)) 27;
+    border-style: solid;
+    border-width: 5px;
+    height: 500px;
+    width: 700px;
+    border-radius: 3%;
+    -webkit-box-shadow: 50px 50px 50px 22px rgba(0,0,0,0.72); 
+    box-shadow: 50px 50px 50px 22px rgba(0,0,0,0.72);
+    display:flex;
+    padding:10px;
+    flex-direction:column;
+}
+.topside{
+    display:flex;
+}
+
+.middle{
+    display:flex;
+}
+.bottom-side{
+    display:flex;
+}
+
+.prompt{
+    font-size:30px;
+    
+}
+#distances{
+    height:fit-content;
+    width:200px;
+    font-size:25px;
+    margin-top:30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.custom{
+    height:30px;
+    font-size:25px;
+    width:100px;
+    margin-top: 30px;
+    margin-left:10px;   
+}
+.time-box-hrs,
+.time-box-min,
+.time-box-sec,
+.time-box{
+    height:30px;
+    font-size:25px;
+    width: 110px;
+    margin-top:30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.unit{
+    display:flex;
+}
+.unit{
+    display:flex;
+    
+    }
+.unit-button{
+    height:35px;
+    width: 70px;
+    margin-top:30px;
+    margin-left:30px;
+    border-style: solid;
+    border-color: rgb(58, 58, 58);
+    background-color:rgb(48, 47, 47);
+    color:white;
+    font-weight:bold;
+    border-radius: 10px; 
+}
+.unit-button:hover{background-color: rgba(133, 123, 123, 0.3);}
+.unit-button:active{
+    background-color: rgba(133, 123, 123, 0.3);
+    box-shadow: 0 1px;
+    transform: translateY(4px);
+}
+.button-box{
+    display:flex;
+    justify-content: space-evenly;
+
+}
+.reset-button{
+height: 35px;
+width: 150px;
+border-style:solid;
+border-color: rgb(0, 0, 0);
+border-radius: 5px;
+font-weight:bold;
+background-image: linear-gradient(to right, rgb(163, 30, 30), rgb(0,0,0));
+color: white;
+}
+@font-face{
+    font-family: myfont;
+    src: url(Fonts/04B_30__.TTF);
+}
+
+h1{
+    font-weight:normal;
+    color: gold;
+    margin-bottom:65px;
+    font-family: myfont;
+    text-shadow: 13px 18px 11px #000000;
+    letter-spacing: 2px;
+}
+
+
+.reset-button:hover{background-color:rgba(48, 47, 47, 0.5)}
+.reset-button:active{
+    box-shadow: 0 1px;
+    transform: translateY(4px);
+}
+
+.calculate-button{
+    width: 150px;
+    background-image: linear-gradient(to right, rgb(22, 187, 0), rgb(12, 100, 0));
+    border-radius: 5px;
+    font-weight:bold;
+    color: white;
+}
+.calculate-button:hover{
+    background-color: rgba(22, 187, 0, 0.5);
+}
+
+
+
+
+.time-box-hrs,
+.time-box-min,
+.time-box-sec,
+.time-box,
+.custom,
+#distances{
+    background-color: rgba(3, 3, 3, 0.5);
+    font-weight:bold;
+    color:white;
+}
